@@ -2,13 +2,41 @@
   display: grid;
   grid-template-areas:
     "top-ad top-ad"
-    "header header";
+    "header header"
+    "middle-large-ad decor-right-large"
+    "main decor-right-large"
+    "order-buttons review-right";
 }
 
+.header {
+  display: flex;
+}
+
+/* Defining grid areas */
 .top-ad {
   grid-area: top-ad;
 }
 
 .header {
-  display: flex;
+  grid-area: header;
+}
+
+.middle-large-ad {
+  grid-area: middle-large-ad;
+}
+
+.main {
+  grid-area: main;
+}
+
+.order-buttons {
+  grid-area: order-buttons;
+}
+
+.decor-right-large {
+  grid-area: decor-right-large;
+}
+
+.review-right {
+  grid-area: review-right;
 }

@@ -5,7 +5,7 @@
     "header header"
     "middle-large-ad decor-right-large"
     "main decor-right-large"
-    "order-buttons review-right";
+    "order-heading review-right";
 }
 
 .header {
@@ -29,8 +29,8 @@
   grid-area: main;
 }
 
-.order-buttons {
-  grid-area: order-buttons;
+.order-heading {
+  grid-area: order-heading;
 }
 
 .decor-right-large {

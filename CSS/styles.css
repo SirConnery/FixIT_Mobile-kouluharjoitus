@@ -1,0 +1,14 @@
+.page {
+  display: grid;
+  grid-template-areas:
+    "top-ad top-ad"
+    "header header";
+}
+
+.top-ad {
+  grid-area: top-ad;
+}
+
+.header {
+  display: flex;
+}

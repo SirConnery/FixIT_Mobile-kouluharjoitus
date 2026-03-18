@@ -8,6 +8,7 @@
     "decor-middle-img ad-right-img"
     "main ad-right-img"
     "order-heading review-right"
+    "selection-card review-right"
     "footer footer";
 }
 
@@ -42,6 +43,10 @@ main {
 
 .review-right {
   grid-area: review-right;
+}
+
+.selection-card {
+  grid-area: selection-card;
 }
 
 footer {

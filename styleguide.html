@@ -1,67 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FixIT Mobile - Style Guide</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FixIT Mobile - Style Guide</title>
 
-<link rel="stylesheet" href="CSS/styleguide.css">
-</head>
+    <link rel="stylesheet" href="CSS/styleguide.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="nav">
+      <a href="#">Etusivu</a>
+      <a href="#">Palvelut</a>
+      <a href="#">Näin korjaus etenee</a>
+      <a href="#">Yhteystiedot</a>
+    </div>
 
-<div class="nav">
-  <a href="#">Etusivu</a>
-  <a href="#">Palvelut</a>
-  <a href="#">Näin korjaus etenee</a>
-  <a href="#">Yhteystiedot</a>
-</div>
+    <div class="container">
+      <h1>FixIT Mobile - Style Guide</h1>
 
-<div class="container">
+      <h2>Typografia</h2>
+      <h1>H1 - Pääotsikko</h1>
+      <h2>H2 - Väliotsikko</h2>
+      <h3>H3 - Alaotsikko</h3>
+      <p>
+        Tämä on leipätekstiä. Käytetään kaikissa sisältösivuissa selkeänä ja
+        helposti luettavana tekstinä.
+      </p>
 
-<h1>FixIT Mobile - Style Guide</h1>
+      <h2>Komponentit</h2>
 
-<h2>Typografia</h2>
-<h1>H1 - Pääotsikko</h1>
-<h2>H2 - Väliotsikko</h2>
-<h3>H3 - Alaotsikko</h3>
-<p>Tämä on leipätekstiä. Käytetään kaikissa sisältösivuissa selkeänä ja helposti luettavana tekstinä.</p>
+      <h3>Navigaatio (nav)</h3>
+      <p>
+        Käytetään jokaisen sivun yläosassa. Sisältää selkeät linkit tärkeimmille
+        sivuille ja toimii pääasiallisena navigointina.
+      </p>
 
-<h2>Komponentit</h2>
+      <h3>Painike (button)</h3>
+      <a href="#" class="button button-primary">Ensisijainen painike</a>
+      <a href="#" class="button button-secondary">Toissijainen painike</a>
+      <p>
+        Ensisijaista painiketta käytetään tärkeimpiin toimintoihin (esim. Ota
+        yhteyttä). Toissijaista käytetään vaihtoehtoisiin toimintoihin.
+      </p>
 
-<h3>Navigaatio (nav)</h3>
-<p>Käytetään jokaisen sivun yläosassa. Sisältää selkeät linkit tärkeimmille sivuille ja toimii pääasiallisena navigointina.</p>
+      <h3>Kortti (card)</h3>
+      <div class="card">
+        <h3>Palvelukortti</h3>
+        <p>
+          Lyhyt kuvaus palvelusta. Kortteja käytetään palveluiden ja sisältöjen
+          ryhmittelyyn.
+        </p>
+      </div>
+      <p>
+        Korttia käytetään selkeästi rajattuihin sisältöihin kuten palvelut tai
+        hinnat.
+      </p>
 
-<h3>Painike (button)</h3>
-<a href="#" class="button button-primary">Ensisijainen painike</a>
-<a href="#" class="button button-secondary">Toissijainen painike</a>
-<p>Ensisijaista painiketta käytetään tärkeimpiin toimintoihin (esim. Ota yhteyttä). Toissijaista käytetään vaihtoehtoisiin toimintoihin.</p>
+      <h3>Info-laatikko (info-box)</h3>
+      <div class="info-box">
+        Hinnat ovat suuntaa-antavia. Tarkka hinta varmistuu diagnoosin jälkeen.
+      </div>
+      <p>
+        Info-laatikkoa käytetään tärkeiden huomioiden tai lisätietojen
+        korostamiseen.
+      </p>
 
-<h3>Kortti (card)</h3>
-<div class="card">
-  <h3>Palvelukortti</h3>
-  <p>Lyhyt kuvaus palvelusta. Kortteja käytetään palveluiden ja sisältöjen ryhmittelyyn.</p>
-</div>
-<p>Korttia käytetään selkeästi rajattuihin sisältöihin kuten palvelut tai hinnat.</p>
+      <h3>Lomake-elementti</h3>
+      <label>Nimi</label>
+      <input type="text" placeholder="Etunimi Sukunimi" />
+      <label>Vian kuvaus</label>
+      <textarea rows="4" placeholder="Kuvaile ongelma"></textarea>
+      <p>
+        Lomake-elementtejä käytetään yhteydenottoon ja huoltopyyntöihin.
+        Kenttien tulee olla selkeitä ja riittävän väljiä mobiilikäyttöön.
+      </p>
+    </div>
 
-<h3>Info-laatikko (info-box)</h3>
-<div class="info-box">
-  Hinnat ovat suuntaa-antavia. Tarkka hinta varmistuu diagnoosin jälkeen.
-</div>
-<p>Info-laatikkoa käytetään tärkeiden huomioiden tai lisätietojen korostamiseen.</p>
-
-<h3>Lomake-elementti</h3>
-<label>Nimi</label>
-<input type="text" placeholder="Etunimi Sukunimi">
-<label>Vian kuvaus</label>
-<textarea rows="4" placeholder="Kuvaile ongelma"></textarea>
-<p>Lomake-elementtejä käytetään yhteydenottoon ja huoltopyyntöihin. Kenttien tulee olla selkeitä ja riittävän väljiä mobiilikäyttöön.</p>
-
-</div>
-
-<div class="footer">
-  © FixIT Mobile - Style Guide
-</div>
-
-</body>
+    <div class="footer">© FixIT Mobile - Style Guide</div>
+  </body>
 </html>

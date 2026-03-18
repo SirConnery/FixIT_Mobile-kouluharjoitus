@@ -1,5 +1,5 @@
 /* =========================
-   1. CSS MUUTTUJAT (VÄRIT)
+   1. CSS MODIFIERS (COLORS)
 ========================= */
 
 :root {
@@ -9,15 +9,15 @@
   --color-dark: #333333;
   --color-success: #2e7d32;
   --color-border: #e0e0e0;
-  --radius: 0.5rem; /* 8px */
-  --spacing: 1rem; /* 16px */
-  --max-width: 68.75rem; /* 1100px */
+  --radius: 0.5rem;
+  --spacing: 1rem;
+  --max-width: 68.75rem;
   --font-heading: "Segoe UI", sans-serif;
   --font-body: Arial, sans-serif;
 }
 
 /* =========================
-   2. TYPOGRAFIA
+   2. TYPOGRAPHY
 ========================= */
 
 body {
@@ -33,64 +33,64 @@ h2,
 h3 {
   font-family: var(--font-heading);
   color: var(--color-primary);
-  margin-top: 2rem; /* 32px */
+  margin-top: 2rem;
 }
 
 h1 {
-  font-size: 2.25rem; /* 36px */
+  font-size: 2.25rem;
 }
 h2 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
 }
 h3 {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
 }
 
 p {
-  margin-bottom: 1rem; /* 16px */
+  margin-bottom: 1rem;
 }
 
 /* =========================
-   3. KOMPONENTIT
+   3. COMPONENTS
 ========================= */
 
 /* NAV */
 nav {
   width: 100vw;
   background: var(--color-primary);
-  padding: 1rem; /* 16px */
+  padding: 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin-right: 1.25rem; /* 20px */
+  margin-right: 1.25rem;
   font-weight: bold;
 }
 
 /* BUTTON */
 button {
   display: inline-block;
-  padding: 0.75rem 1.25rem; /* 12px 20px */
+  padding: 0.75rem 1.25rem;
   border-radius: var(--radius);
   text-decoration: none;
   font-weight: bold;
-  margin-top: 0.625rem; /* 10px */
+  margin-top: 0.625rem;
 }
 
-.button-primary {
+.btn-primary {
   background: var(--color-accent);
   color: white;
 }
 
-.button-secondary {
-  border: 0.125rem solid var(--color-accent); /* 2px */
+.btn-secondary {
+  border: 0.125rem solid var(--color-accent);
   color: var(--color-accent);
 }
 
 /* CARD */
 .card {
-  border: 0.0625rem solid var(--color-border); /* 1px */
+  border: 0.0625rem solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
@@ -100,7 +100,7 @@ button {
 /* INFO BOX */
 .info-box {
   background: var(--color-light);
-  border-left: 0.3125rem solid var(--color-accent); /* 5px */
+  border-left: 0.3125rem solid var(--color-accent);
   padding: var(--spacing);
   margin: var(--spacing) 0;
 }
@@ -109,10 +109,10 @@ button {
 input,
 textarea {
   width: 100%;
-  padding: 0.625rem; /* 10px */
-  margin-top: 0.3125rem; /* 5px */
-  margin-bottom: 0.9375rem; /* 15px */
-  border: 0.0625rem solid var(--color-border); /* 1px */
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.9375rem;
+  border: 0.0625rem solid var(--color-border);
   border-radius: var(--radius);
   font-family: var(--font-body);
 }
@@ -121,19 +121,48 @@ textarea {
 footer {
   background: var(--color-primary);
   color: white;
-  padding: 1.25rem; /* 20px */
-  margin-top: 2.5rem; /* 40px */
+  padding: 1.25rem;
+  margin-top: 2.5rem;
   text-align: center;
 }
 
+/* =============================
+   5. BRAND-MODEL-SELECTION-CARD
+============================= */
+
+.selection-card {
+  height: 30rem;
+  width: 30rem;
+}
+
+.card-background-wrapper {
+  display: inline-block;
+  background: linear-gradient(to right, #1f2a44, #2d6cdf);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.brand-select {
+  margin: 0.2rem;
+}
+
+.model-select {
+  margin: 0.2rem;
+}
+
+.view-services-btn {
+  background: var(--color-accent);
+  color: white;
+}
+
 /* =========================
-   4. KUVAT
+   6. KUVAT
 ========================= */
 
 figure {
-  margin: 0; /* Remove automatic margin from figure element */
+  margin: 0;
 }
 
 img {
-  margin: 0.625rem; /* 10px */
+  margin: 0.625rem;
 }

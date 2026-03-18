@@ -3,15 +3,15 @@
 ========================= */
 
 :root {
-  --color-primary: #1F2A44;
-  --color-accent: #2D6CDF;
-  --color-light: #F5F6F8;
+  --color-primary: #1f2a44;
+  --color-accent: #2d6cdf;
+  --color-light: #f5f6f8;
   --color-dark: #333333;
-  --color-success: #2E7D32;
-  --color-border: #E0E0E0;
-  --radius: 8px;
-  --spacing: 16px;
-  --max-width: 1100px;
+  --color-success: #2e7d32;
+  --color-border: #e0e0e0;
+  --radius: 0.5rem; /* 8px */
+  --spacing: 1rem; /* 16px */
+  --max-width: 68.75rem; /* 1100px */
   --font-heading: "Segoe UI", sans-serif;
   --font-body: Arial, sans-serif;
 }
@@ -28,24 +28,26 @@ body {
   line-height: 1.6;
 }
 
-.container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: var(--spacing);
-}
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-heading);
   color: var(--color-primary);
-  margin-top: 32px;
+  margin-top: 2rem; /* 32px */
 }
 
-h1 { font-size: 36px; }
-h2 { font-size: 28px; }
-h3 { font-size: 20px; }
+h1 {
+  font-size: 2.25rem; /* 36px */
+}
+h2 {
+  font-size: 1.75rem; /* 28px */
+}
+h3 {
+  font-size: 1.25rem; /* 20px */
+}
 
 p {
-  margin-bottom: 16px;
+  margin-bottom: 1rem; /* 16px */
 }
 
 /* =========================
@@ -53,26 +55,27 @@ p {
 ========================= */
 
 /* NAV */
-.nav {
+nav {
+  width: 100vw;
   background: var(--color-primary);
-  padding: 16px;
+  padding: 1rem; /* 16px */
 }
 
-.nav a {
+nav a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 1.25rem; /* 20px */
   font-weight: bold;
 }
 
 /* BUTTON */
-.button {
+button {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem; /* 12px 20px */
   border-radius: var(--radius);
   text-decoration: none;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 0.625rem; /* 10px */
 }
 
 .button-primary {
@@ -81,13 +84,13 @@ p {
 }
 
 .button-secondary {
-  border: 2px solid var(--color-accent);
+  border: 0.125rem solid var(--color-accent); /* 2px */
   color: var(--color-accent);
 }
 
 /* CARD */
 .card {
-  border: 1px solid var(--color-border);
+  border: 0.0625rem solid var(--color-border); /* 1px */
   border-radius: var(--radius);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
@@ -97,27 +100,40 @@ p {
 /* INFO BOX */
 .info-box {
   background: var(--color-light);
-  border-left: 5px solid var(--color-accent);
+  border-left: 0.3125rem solid var(--color-accent); /* 5px */
   padding: var(--spacing);
   margin: var(--spacing) 0;
 }
 
 /* FORM ELEMENT */
-input, textarea {
+input,
+textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid var(--color-border);
+  padding: 0.625rem; /* 10px */
+  margin-top: 0.3125rem; /* 5px */
+  margin-bottom: 0.9375rem; /* 15px */
+  border: 0.0625rem solid var(--color-border); /* 1px */
   border-radius: var(--radius);
   font-family: var(--font-body);
 }
 
 /* FOOTER */
-.footer {
+footer {
   background: var(--color-primary);
   color: white;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 1.25rem; /* 20px */
+  margin-top: 2.5rem; /* 40px */
   text-align: center;
+}
+
+/* =========================
+   4. KUVAT
+========================= */
+
+figure {
+  margin: 0; /* Remove automatic margin from figure element */
+}
+
+img {
+  margin: 0.625rem; /* 10px */
 }

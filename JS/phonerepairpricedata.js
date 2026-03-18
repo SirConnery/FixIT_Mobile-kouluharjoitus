@@ -21,5 +21,5 @@ const repairTypes = [
   "Screen Change",
   "Battery Change",
   "Port Repairs",
-  "Audio Repairs",
+  "Speaker Repair",
 ];

@@ -1,0 +1,48 @@
+header {
+  display: flex;
+}
+
+/* Defining grid areas */
+.top-ad {
+  grid-area: top-ad;
+}
+
+header {
+  grid-area: header;
+}
+
+.decor-middle {
+  grid-area: decor-middle;
+}
+
+main {
+  grid-area: main;
+}
+
+.repair-finder-heading {
+  grid-area: repair-finder-heading;
+}
+
+.ad-right {
+  grid-area: ad-right;
+}
+
+.review-right {
+  grid-area: review-right;
+}
+
+.selection-card {
+  grid-area: selection-card;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.showing-results-text {
+  grid-area: showing-results-text;
+}
+
+.result-cards {
+  grid-area: result-cards;
+}

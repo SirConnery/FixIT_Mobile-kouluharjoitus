@@ -1,3 +1,5 @@
+// This script populates the brand&model selection card
+
 function createSelectionCard(container) {
   container.innerHTML = "";
 
@@ -6,10 +8,10 @@ function createSelectionCard(container) {
   var modelSelect = document.createElement("select");
   var viewServicesBtn = document.createElement("button");
 
-  cardBackground.className = "card-background-wrapper";
-  brandSelect.className = "brand-select";
-  modelSelect.className = "model-select";
-  viewServicesBtn.className = "view-services-btn";
+  cardBackground.classList.add("card-background-wrapper");
+  brandSelect.classList.add("brand-select");
+  modelSelect.classList.add("model-select");
+  viewServicesBtn.classList.add("view-services-btn");
 
   viewServicesBtn.textContent = "View Services";
 
@@ -25,6 +27,7 @@ function createSelectionCard(container) {
   handleBrandChange({ target: brandSelect });
 
   brandSelect.addEventListener("change", handleBrandChange);
+  viewServicesBtn.addEventListener("click", submitResults);
 }
 
 function populateBrands(brandSelect) {
@@ -66,6 +69,30 @@ function cCardsForAll() {
   document.querySelectorAll(".selection-card").forEach(function (card) {
     createSelectionCard(card);
   });
+}
+
+// Save results and move to resultspage
+
+function submitResults(event) {
+  var card = event.target.closest(".selection-card");
+
+  var brand = card.querySelector(".brand-select").value;
+  var model = card.querySelector(".model-select").value;
+
+  var prices = phoneRepairPriceData[brand][model];
+
+  console.log("Selected:", brand, model);
+  console.log("Prices:", prices);
+
+  var data = {
+    brand: brand,
+    model: model,
+    prices: prices,
+  };
+
+  localStorage.setItem("repairData", JSON.stringify(data));
+
+  window.location.href = "resultspage.html";
 }
 
 cCardsForAll();

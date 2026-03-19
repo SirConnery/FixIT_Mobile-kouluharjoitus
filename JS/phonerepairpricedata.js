@@ -17,9 +17,29 @@ const phoneRepairPriceData = {
 };
 
 const repairTypes = [
-  "Screen Repair",
-  "Screen Change",
-  "Battery Change",
-  "Port Repairs",
-  "Speaker Repair",
+  {
+    name: "Screen Repair",
+    description: "Repair cracked or malfunctioning screens",
+    img: "https://placehold.co/150x150",
+  },
+  {
+    name: "Screen Change",
+    description: "Replace the screen completely with a new one",
+    img: "https://placehold.co/150x150",
+  },
+  {
+    name: "Battery Change",
+    description: "Swap out old or faulty batteries quickly",
+    img: "https://placehold.co/150x150",
+  },
+  {
+    name: "Port Repairs",
+    description: "Fix charging or headphone ports",
+    img: "https://placehold.co/150x150",
+  },
+  {
+    name: "Speaker Repair",
+    description: "Restore audio quality or replace broken speakers",
+    img: "https://placehold.co/150x150",
+  },
 ];

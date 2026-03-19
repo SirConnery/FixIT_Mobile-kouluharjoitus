@@ -155,8 +155,57 @@ footer {
   color: white;
 }
 
+/* =============================
+   6. RESULTS-CARD
+============================= */
+
+.result-cards {
+  display: flex;
+}
+
+.result-card {
+  text-align: center;
+  background-color: #2d6cdf;
+  width: 10rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.result-card-headline-area {
+  margin: 0;
+}
+
+.result-card-headline {
+  margin: 0;
+}
+
+.result-card-model-brand-names {
+  margin: 0;
+}
+
+.result-card-price {
+  margin: 0;
+}
+
+.result-card-separator {
+  margin: 0;
+}
+
+.result-card-text-area {
+  margin: 0;
+}
+
+.result-card-text {
+  margin: 0;
+}
+
+.result-card-img {
+  width: 100px;
+}
+
 /* =========================
-   6. IMAGES
+   7. IMAGES
 ========================= */
 
 figure {

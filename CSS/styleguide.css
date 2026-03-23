@@ -165,7 +165,8 @@ footer {
 
 .result-card {
   text-align: center;
-  background-color: #2d6cdf;
+  background-color: #2d6bdf8c ;
+  background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
   width: 10rem;
   margin: 1rem;
   padding: 1rem;

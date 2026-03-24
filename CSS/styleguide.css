@@ -139,9 +139,13 @@ footer {
 }
 
 .card-background-wrapper {
-  background: linear-gradient(to right, #1f2a44, #2d6cdf);
+  background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
   padding: 1rem;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
 }
 
 .brand-select {
@@ -153,8 +157,9 @@ footer {
 }
 
 .view-services-btn {
-  background: var(--color-accent);
-  color: white;
+  background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
+  color: rgb(255, 255, 255);
+  padding: 0.75rem 1.25rem;
 }
 
 /* =============================
@@ -173,6 +178,7 @@ footer {
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
+  margin-top: 1rem;
 }
 
 .result-card-headline-area {
@@ -196,7 +202,9 @@ footer {
 }
 
 .result-card-text-area {
-  margin: 0;
+  margin: 5% 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .result-card-text {

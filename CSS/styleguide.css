@@ -56,8 +56,11 @@ p {
 
 /* NAV */
 nav {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   background: var(--color-primary);
+  gap: 1.25rem;
   padding: 1rem;
 }
 
@@ -132,11 +135,10 @@ footer {
 
 .selection-card {
   height: 10rem;
-  width: 30rem;
+  width: 22rem;
 }
 
 .card-background-wrapper {
-  display: inline-block;
   background: linear-gradient(to right, #1f2a44, #2d6cdf);
   padding: 1rem;
   border-radius: 10px;
@@ -165,7 +167,7 @@ footer {
 
 .result-card {
   text-align: center;
-  background-color: #2d6bdf8c ;
+  background-color: #2d6bdf8c;
   background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
   width: 10rem;
   margin: 1rem;

@@ -11,8 +11,8 @@ header {
   grid-area: header;
 }
 
-.decor-middle {
-  grid-area: decor-middle;
+.hero {
+  grid-area: hero;
 }
 
 main {

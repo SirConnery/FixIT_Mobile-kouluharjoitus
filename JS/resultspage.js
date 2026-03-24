@@ -30,6 +30,7 @@ function cResultCards() {
     cardPrice.textContent = prices[i] + "€";
 
     let cardTextSeparator = document.createElement("hr");
+    cardTextSeparator.classList.add("result-card-separator");
 
     let cardTextArea = document.createElement("div");
     cardTextArea.classList.add("result-card-text-area");

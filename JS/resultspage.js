@@ -10,10 +10,6 @@ function cResultCards() {
     let card = document.createElement("div");
     card.classList.add("result-card");
 
-    let cardImg = document.createElement("img");
-    cardImg.classList.add("result-card-img");
-    cardImg.src = "https://placehold.co/150x150";
-
     let cardHeadlineArea = document.createElement("div");
     cardHeadlineArea.classList.add("result-card-headline-area");
 
@@ -39,9 +35,17 @@ function cResultCards() {
     cardText.classList.add("result-card-text");
     cardText.textContent = repairType.description;
 
-    card.append(cardHeadlineArea, cardTextSeparator, cardTextArea, cardImg);
+    let imgWrapper = document.createElement("div");
+    imgWrapper.classList.add("result-card-img-wrapper");
+
+    let cardImg = document.createElement("img");
+    cardImg.classList.add("result-card-img");
+    cardImg.src = "https://placehold.co/150x150";
+
     cardHeadlineArea.append(cardHeadline, cardModelBrandNames, cardPrice);
     cardTextArea.append(cardText);
+    imgWrapper.append(cardImg);
+    card.append(cardHeadlineArea, cardTextSeparator, cardTextArea, imgWrapper);
     resultCards.append(card);
   });
 }

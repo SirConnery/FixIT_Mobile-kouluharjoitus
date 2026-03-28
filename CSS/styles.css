@@ -27,9 +27,9 @@
 /* Animation keyframes */
 @keyframes scroll-ad {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }

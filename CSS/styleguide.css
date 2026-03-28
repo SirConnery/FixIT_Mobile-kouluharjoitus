@@ -129,6 +129,14 @@ footer {
   text-align: center;
 }
 
+.footer-content-wrapper {
+  margin: 0;
+}
+
+.footer-text {
+  margin: 0;
+}
+
 /* =============================
    5. BRAND-MODEL-SELECTION-CARD
 ============================= */

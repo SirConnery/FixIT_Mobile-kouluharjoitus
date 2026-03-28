@@ -1,4 +1,6 @@
-// This script populates the brand&model selection card
+const footer = document.getElementById("footer");
+
+// Populates the brand&model selection card
 
 function createSelectionCard(container) {
   container.innerHTML = "";
@@ -95,4 +97,22 @@ function submitResults(event) {
   window.location.href = "resultspage.html";
 }
 
-cCardsForAll();
+function cFooter() {
+  const footerContentWrapper = document.createElement("div");
+  footerContentWrapper.classList.add("footerContentWrapper");
+
+  const footerText = document.createElement("p");
+  footerText.classList.add("footer-text");
+  footerText.textContent =
+    "© 2026 FixIT Mobile | Vantaa | Phone repairs, screen replacements, and troubleshooting. All rights reserved.";
+
+  footerContentWrapper.append(footerText);
+  footer.append(footerContentWrapper);
+}
+
+function runAll() {
+  cCardsForAll();
+  cFooter();
+}
+
+runAll();

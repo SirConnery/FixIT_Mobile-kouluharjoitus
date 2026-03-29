@@ -32,6 +32,10 @@
   margin: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Animation keyframes */
 @keyframes scroll-ad {
   0% {

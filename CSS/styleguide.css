@@ -242,6 +242,50 @@ footer {
 ============================= */
 
 .faq-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.5rem;
+}
+
+.faq-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.faq-card-question-area {
+  margin: 0;
+}
+
+.faq-card-question {
+  margin: 0;
+}
+
+.faq-card-separator {
+  width: 50%;
+}
+
+.faq-show-answer-btn {
+  margin: 0;
+}
+
+.faq-card-answer-area {
+  height: calc(1.2rem * 3); /* 3 lines fixed height */
+  overflow: hidden;
+}
+
+.faq-card-answer-area.hidden {
+  display: none;
+}
+
+.faq-card-answer-area {
   margin: 0;
 }
 

@@ -5,10 +5,10 @@ const footer = document.getElementById("footer");
 function createSelectionCard(container) {
   container.innerHTML = "";
 
-  var cardBackground = document.createElement("div");
-  var brandSelect = document.createElement("select");
-  var modelSelect = document.createElement("select");
-  var viewServicesBtn = document.createElement("button");
+  let cardBackground = document.createElement("div");
+  let brandSelect = document.createElement("select");
+  let modelSelect = document.createElement("select");
+  let viewServicesBtn = document.createElement("button");
 
   cardBackground.classList.add("card-background-wrapper");
   brandSelect.classList.add("brand-select");
@@ -35,10 +35,10 @@ function createSelectionCard(container) {
 function populateBrands(brandSelect) {
   brandSelect.innerHTML = "";
 
-  var brands = Object.keys(phoneRepairPriceData);
+  let brands = Object.keys(phoneRepairPriceData);
 
   brands.forEach((brand) => {
-    var option = document.createElement("option");
+    let option = document.createElement("option");
     option.value = brand;
     option.textContent = brand;
     brandSelect.appendChild(option);
@@ -46,18 +46,18 @@ function populateBrands(brandSelect) {
 }
 
 function handleBrandChange(event) {
-  var brandSelect = event.target;
-  var card = brandSelect.card;
-  var modelSelect = card.querySelector(".model-select");
+  let brandSelect = event.target;
+  let card = brandSelect.card;
+  let modelSelect = card.querySelector(".model-select");
 
   modelSelect.innerHTML = "";
 
-  var selectedBrand = brandSelect.value;
+  let selectedBrand = brandSelect.value;
 
   if (phoneRepairPriceData[selectedBrand]) {
-    var models = Object.keys(phoneRepairPriceData[selectedBrand]);
+    let models = Object.keys(phoneRepairPriceData[selectedBrand]);
     models.forEach(function (model) {
-      var option = document.createElement("option");
+      let option = document.createElement("option");
       option.value = model;
       option.textContent = model;
       modelSelect.appendChild(option);
@@ -76,17 +76,17 @@ function cCardsForAll() {
 // Save results and move to resultspage
 
 function submitResults(event) {
-  var card = event.target.closest(".selection-card");
+  let card = event.target.closest(".selection-card");
 
-  var brand = card.querySelector(".brand-select").value;
-  var model = card.querySelector(".model-select").value;
+  let brand = card.querySelector(".brand-select").value;
+  let model = card.querySelector(".model-select").value;
 
-  var prices = phoneRepairPriceData[brand][model];
+  let prices = phoneRepairPriceData[brand][model];
 
   console.log("Selected:", brand, model);
   console.log("Prices:", prices);
 
-  var data = {
+  let data = {
     brand: brand,
     model: model,
     prices: prices,

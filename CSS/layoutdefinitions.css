@@ -46,3 +46,15 @@ footer {
 .result-cards {
   grid-area: result-cards;
 }
+
+.locations-heading {
+  grid-area: locations-heading;
+}
+
+.map-right {
+  grid-area: map-right;
+}
+
+.faq {
+  grid-area: faq;
+}

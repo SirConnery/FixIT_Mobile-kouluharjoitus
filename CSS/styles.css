@@ -24,6 +24,14 @@
   display: inline-block;
 }
 
+.map-right-img {
+  margin: 0;
+}
+
+.faq {
+  margin: 0;
+}
+
 /* Animation keyframes */
 @keyframes scroll-ad {
   0% {

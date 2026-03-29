@@ -1,0 +1,11 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 250px; /* main + right sidebar */
+
+  grid-template-areas:
+    "top-ad top-ad"
+    "header header"
+    "main main"
+    "locations-heading map-right"
+    "footer footer";
+}

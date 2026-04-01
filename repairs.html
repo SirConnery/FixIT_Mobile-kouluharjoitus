@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/layoutdefinitions.css" />
-    <link rel="stylesheet" href="CSS/layoutresultspage.css" />
+    <link rel="stylesheet" href="CSS/layoutrepairs.css" />
     <link rel="stylesheet" href="CSS/styleguide.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
     <title>FixIT Mobile</title>
@@ -22,32 +22,33 @@
       <header>
         <nav>
           <a href="/index.html">Home</a>
-          <a href="/resultspage.html">Repairs</a>
+          <a href="/repairs.html">Repairs</a>
           <a href="/faq.html">FAQ</a>
           <a href="/contact.html">Contact</a>
         </nav>
       </header>
 
-      <figure class="decor-middle">
+      <figure class="hero">
         <img
-          class="decor-middle-img"
-          src="https://placehold.co/1000x300"
+          class="hero-img"
+          src="https://placehold.co/1500x300"
           alt="decorative image"
         />
       </figure>
 
-      <section class="repair-finder-heading">
-        <h1>Select Your Phone</h1>
-        <section class="selection-card"></section>
-      </section>
+      <div class="repair-finder">
+        <section class="brand-model-selection-card"></section>
+      </div>
 
       <section class="showing-results-text">Showing results of 1-10</section>
 
       <section class="result-cards" id="result-cards"></section>
 
       <main>
-        <h1>How it works</h1>
-        Lorem ipsum
+        <section class="repairs-page-howitworks-card flex-center column">
+          <h2>How it works</h2>
+          <p>Lorem ipsum</p>
+        </section>
       </main>
 
       <footer id="footer"></footer>
@@ -55,6 +56,6 @@
 
     <script src="JS/phonerepairpricedata.js"></script>
     <script src="JS/main.js"></script>
-    <script src="JS/resultspage.js"></script>
+    <script src="JS/repairs.js"></script>
   </body>
 </html>

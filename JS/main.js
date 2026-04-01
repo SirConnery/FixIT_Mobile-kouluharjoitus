@@ -6,20 +6,36 @@ function createSelectionCard(container) {
   container.innerHTML = "";
 
   let cardBackground = document.createElement("div");
+  let textArea = document.createElement("div");
+  let headline = document.createElement("h3");
+  let text = document.createElement("p");
+
+  let selectionControls = document.createElement("div");
   let brandSelect = document.createElement("select");
   let modelSelect = document.createElement("select");
   let viewServicesBtn = document.createElement("button");
 
-  cardBackground.classList.add("card-background-wrapper");
+  cardBackground.classList.add(
+    "brand-model-card-background-wrapper",
+    "flex-center",
+    "column",
+  );
+
+  textArea.classList.add("brand-model-card-text-area", "flex-center", "column");
+
+  headline.classList.add("brand-model-card-headline");
+  text.classList.add("brand-model-card-text");
   brandSelect.classList.add("brand-select");
   modelSelect.classList.add("model-select");
   viewServicesBtn.classList.add("view-services-btn");
 
+  headline.textContent = "Reliable Phone Repair";
+  text.textContent = "Select your phone";
   viewServicesBtn.textContent = "View Services";
 
-  cardBackground.appendChild(brandSelect);
-  cardBackground.appendChild(modelSelect);
-  cardBackground.appendChild(viewServicesBtn);
+  textArea.append(headline, text);
+  selectionControls.append(brandSelect, modelSelect, viewServicesBtn);
+  cardBackground.append(textArea, selectionControls);
   container.append(cardBackground);
 
   brandSelect.card = container;
@@ -68,15 +84,17 @@ function handleBrandChange(event) {
 }
 
 function cCardsForAll() {
-  document.querySelectorAll(".selection-card").forEach(function (card) {
-    createSelectionCard(card);
-  });
+  document
+    .querySelectorAll(".brand-model-selection-card")
+    .forEach(function (card) {
+      createSelectionCard(card);
+    });
 }
 
 // Save results and move to resultspage
 
 function submitResults(event) {
-  let card = event.target.closest(".selection-card");
+  let card = event.target.closest(".brand-model-selection-card");
 
   let brand = card.querySelector(".brand-select").value;
   let model = card.querySelector(".model-select").value;
@@ -94,7 +112,7 @@ function submitResults(event) {
 
   localStorage.setItem("repairData", JSON.stringify(data));
 
-  window.location.href = "resultspage.html";
+  window.location.href = "repairs.html";
 }
 
 function cFooter() {

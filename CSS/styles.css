@@ -1,17 +1,21 @@
-.hero {
-  justify-self: center;
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.content-wrapper {
-  display: flex;
+.flex-center.column {
   flex-direction: column;
-  align-items: center;
+}
+
+.flex-center.row {
+  flex-direction: row;
 }
 
 .top-ad {
   width: 100vw;
   overflow: hidden;
-  background-color: blue;
+  background-color: white;
 }
 
 .top-ad-container {
@@ -24,16 +28,19 @@
   display: inline-block;
 }
 
-.map-right-img {
-  margin: 0;
-}
-
 .faq {
   margin: 0;
 }
 
 .hidden {
   display: none;
+}
+
+/* REPAIRSPAGE */
+
+.repairs-page-howitworks-card {
+  margin: 0;
+  background-color: yellow;
 }
 
 /* Animation keyframes */

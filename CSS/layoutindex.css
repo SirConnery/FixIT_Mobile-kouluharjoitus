@@ -1,13 +1,10 @@
 .page {
   display: grid;
-  grid-template-columns: 1fr 250px; /* main + right sidebar */
 
   grid-template-areas:
-    "top-ad top-ad"
-    "header header"
-    "hero ad-right"
-    "main ad-right"
-    "repair-finder-heading review-right"
-    "selection-card review-right"
-    "footer footer";
+    "top-ad"
+    "header"
+    "hero"
+    "main"
+    "footer";
 }

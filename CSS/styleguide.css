@@ -54,6 +54,27 @@ p {
    3. COMPONENTS
 ========================= */
 
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+  gap: 3rem;
+}
+
+.site-summary-card {
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+}
+
 /* NAV */
 nav {
   display: flex;
@@ -141,18 +162,35 @@ footer {
    5. BRAND-MODEL-SELECTION-CARD
 ============================= */
 
-.selection-card {
-  height: 10rem;
-  width: 22rem;
+.brand-model-selection-card {
+  display: flex;
+  flex-direction: column;
 }
 
-.card-background-wrapper {
-  background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
+.brand-model-card-background-wrapper {
+  background: linear-gradient(
+    to bottom,
+    #c7dbff 0%,
+    #8fb2ff 45%,
+    #4a6fd1 75%,
+    #1f2a44 100%
+  );
+
   padding: 1rem;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
   gap: 0.5rem;
+}
+
+.brand-model-card-text-area {
+  gap: 1rem;
+}
+
+.brand-model-card-headline {
+  margin: 0;
+}
+
+.brand-model-card-text {
+  margin: 0;
 }
 
 .brand-select {
@@ -183,13 +221,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  aspect-ratio: 1 / 1;
   text-align: center;
-  background-color: 0 #2d6bdf8c;
   background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
 
   gap: 1rem;
-  margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
 }

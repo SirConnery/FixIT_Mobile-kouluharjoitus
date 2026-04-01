@@ -213,7 +213,8 @@ footer {
 
 .result-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  width: 100%;
   gap: 0.5rem;
   background: linear-gradient(
     to bottom,
@@ -286,6 +287,7 @@ footer {
 .faq-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  width: 100%;
   gap: 0.5rem;
 }
 
@@ -293,7 +295,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  aspect-ratio: 1 / 1;
   text-align: center;
   background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
   gap: 1rem;
@@ -319,8 +320,7 @@ footer {
 }
 
 .faq-card-answer-area {
-  height: calc(1.2rem * 3); /* 3 lines fixed height */
-  overflow: hidden;
+  margin: 0;
 }
 
 .faq-card-answer-area.hidden {

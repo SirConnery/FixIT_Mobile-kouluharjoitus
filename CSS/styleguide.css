@@ -177,6 +177,13 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 0.5rem;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(123, 189, 255, 0.541) 10%,
+    rgba(123, 189, 255, 0.541) 90%,
+    transparent 100%
+  );
 }
 
 .result-card {

@@ -16,6 +16,14 @@
   display: none;
 }
 
+/* INDEX PAGE */
+
+.site-summary-card {
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+}
+
 /* REPAIRS PAGE */
 
 .repairs-page-howitworks-card {

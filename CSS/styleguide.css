@@ -87,16 +87,11 @@ main {
   gap: 3rem;
 }
 
-.site-summary-card {
-  display: flex;
-  flex-direction: column;
-  background-color: purple;
-}
-
 /* NAV */
 nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   background: var(--color-primary);
   gap: 1.25rem;
@@ -108,6 +103,18 @@ nav a {
   text-decoration: none;
   margin-right: 1.25rem;
   font-weight: bold;
+}
+
+/* HEADER LOGO */
+
+.header-logo-container {
+  display: flex;
+}
+
+.header-logo-img {
+  display: block;
+  height: 50px;
+  width: auto;
 }
 
 /* BUTTON */

@@ -54,6 +54,24 @@ p {
    3. COMPONENTS
 ========================= */
 
+/* TOP-AD */
+
+.top-ad {
+  width: 100vw;
+  overflow: hidden;
+  background-color: white;
+}
+
+.top-ad-container {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-ad 10s linear infinite;
+}
+
+.img-top-ad {
+  display: inline-block;
+}
+
 /* HERO */
 .hero {
   display: flex;
@@ -331,8 +349,103 @@ footer {
   margin: 0;
 }
 
+/* =============================
+   8. CONTACT FORM
+============================= */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
+  color: #fff;
+}
+
+/* Labels */
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Inputs, select, textarea */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+/* Textarea height */
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Phone input group */
+.phone-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.phone-wrapper select {
+  width: 30%;
+}
+
+.phone-wrapper input {
+  width: 70%;
+}
+
+/* Checkbox group */
+.contact-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.contact-form div {
+  display: flex;
+  align-items: center;
+}
+
+/* Submit button */
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+
+  background-color: #ffffff;
+  color: #1f2a44;
+  transition: 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #dbe4ff;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .phone-wrapper {
+    flex-direction: column;
+  }
+
+  .phone-wrapper select,
+  .phone-wrapper input {
+    width: 100%;
+  }
+}
+
 /* =========================
-   8. IMAGES
+   9. IMAGES
 ========================= */
 
 figure {

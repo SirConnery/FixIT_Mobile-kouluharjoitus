@@ -2,7 +2,7 @@ const questions = [
   {
     question: "How long does a typical phone repair take?",
     answer:
-      "Most repairs are completed within 1–2 hours, depending on the issue.",
+      "Most repairs are completed within 1-2 hours, depending on the issue.",
   },
   {
     question: "Do you use original or third-party parts?",

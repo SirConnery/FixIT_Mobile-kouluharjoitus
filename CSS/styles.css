@@ -12,35 +12,21 @@
   flex-direction: row;
 }
 
-.top-ad {
-  width: 100vw;
-  overflow: hidden;
-  background-color: white;
-}
-
-.top-ad-container {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll-ad 10s linear infinite;
-}
-
-.img-top-ad {
-  display: inline-block;
-}
-
-.faq {
-  margin: 0;
-}
-
 .hidden {
   display: none;
 }
 
-/* REPAIRSPAGE */
+/* REPAIRS PAGE */
 
 .repairs-page-howitworks-card {
   margin: 0;
   background-color: yellow;
+}
+
+/* LOCATIONS PAGE */
+
+.locations-heading {
+  background-color: aliceblue;
 }
 
 /* Animation keyframes */

@@ -1,42 +1,54 @@
+const storeLocationCardsContainer = document.getElementById(
+  "store-location-cards-container",
+);
+
 function cStoreLocationCards() {
-  faqCards.innerHTML = "";
+  storeLocationCardsContainer.innerHTML = "";
 
-  questions.forEach((question, index) => {
+  storeLocations.forEach((storeLocation, index) => {
+    // Card container
     let card = document.createElement("div");
-    card.classList.add("faq-card");
+    card.classList.add("store-location-card");
 
-    let cardQuestionArea = document.createElement("div");
-    cardQuestionArea.classList.add("faq-card-question-area");
+    // Text area
+    let textArea = document.createElement("div");
+    textArea.classList.add("store-location-card-text-area");
 
-    let cardQuestion = document.createElement("h3");
-    cardQuestion.classList.add("faq-card-question");
-    cardQuestion.textContent = question.question;
+    let storeName = document.createElement("h3");
+    storeName.classList.add("store-location-card-name");
+    storeName.textContent = storeLocation.name;
 
-    let cardTextSeparator = document.createElement("hr");
-    cardTextSeparator.classList.add("faq-card-separator");
+    let cardDetails = document.createElement("div");
+    cardDetails.classList.add("store-location-card-details");
 
-    let showAnswerBtn = document.createElement("button");
-    showAnswerBtn.classList.add("faq-show-answer-btn");
-    showAnswerBtn.textContent = "Show answer";
+    let storeLocationText = document.createElement("p");
+    storeLocationText.classList.add("store-location-card-location");
+    storeLocationText.textContent = storeLocation.location;
 
-    let cardAnswerArea = document.createElement("div");
-    cardAnswerArea.classList.add("faq-card-answer-area");
-    cardAnswerArea.classList.add("hidden");
+    let storeInfoText = document.createElement("p");
+    storeInfoText.classList.add("store-location-card-info");
+    storeInfoText.textContent = storeLocation.info;
 
-    let cardAnswer = document.createElement("p");
-    cardAnswer.classList.add("faq-card-answer");
-    cardAnswer.textContent = question.answer;
+    //map area
+    let mapArea = document.createElement("div");
+    mapArea.classList.add("store-location-card-map-area");
 
-    cardQuestionArea.append(cardQuestion);
-    cardAnswerArea.append(cardAnswer);
-    card.append(
-      cardQuestionArea,
-      cardTextSeparator,
-      showAnswerBtn,
-      cardAnswerArea,
-    );
-    faqCards.append(card);
+    let mapImg = document.createElement("img");
+    mapImg.classList.add("store-location-card-map-img");
+    mapImg.src = storeLocation.mapImg;
+    mapImg.alt = `Map of ${storeLocation.name}`;
 
-    showAnswerBtn.addEventListener("click", showHideanswer);
+    // Append elements
+    textArea.append(storeName, storeLocationText, storeInfoText);
+    mapArea.append(mapImg);
+    card.append(textArea, mapArea);
+
+    storeLocationCardsContainer.append(card);
   });
 }
+
+function runAll() {
+  cStoreLocationCards();
+}
+
+runAll();

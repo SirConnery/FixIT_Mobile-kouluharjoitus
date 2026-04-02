@@ -145,9 +145,9 @@ function cContactForm() {
   container.append(form);
 }
 
-function runScripts() {
+function runAll() {
   cFormToggle();
   cContactForm();
 }
 
-runScripts();
+runAll();

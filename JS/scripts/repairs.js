@@ -49,6 +49,9 @@ function cResultCards() {
     resultCards.append(card);
   });
 }
-cResultCards();
 
-console.log(data, brand, prices);
+function runAll() {
+  cResultCards();
+}
+
+runAll();

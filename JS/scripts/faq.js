@@ -57,4 +57,8 @@ function showHideanswer(event) {
   }
 }
 
-cFaqCards();
+function runAll() {
+  cFaqCards();
+}
+
+runAll();

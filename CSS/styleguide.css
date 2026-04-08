@@ -117,6 +117,18 @@ nav a {
   width: auto;
 }
 
+.header-item {
+  margin: 0;
+}
+
+.header-item-img {
+  vertical-align: middle;
+}
+
+.header-item-icon-img {
+  display: block;
+}
+
 /* BUTTON */
 button {
   display: inline-block;

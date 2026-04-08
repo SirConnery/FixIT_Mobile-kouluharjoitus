@@ -127,6 +127,8 @@ nav a {
 
 .header-item-icon-img {
   display: block;
+  width: 25px;
+  height: 25px;
 }
 
 /* BUTTON */

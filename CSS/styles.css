@@ -21,7 +21,14 @@
 .site-summary-card {
   display: flex;
   flex-direction: column;
-  background-color: purple;
+  background: linear-gradient(
+    to bottom,
+    #1f2a44 0%,
+    #4a6fd1 15%,
+    #8fb2ff 55%,
+    #c7dbff 100%
+  );
+  border-radius: 10px;
 }
 
 /* REPAIRS PAGE */

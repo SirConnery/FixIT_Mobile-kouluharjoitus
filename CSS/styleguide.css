@@ -76,14 +76,14 @@ p {
 .hero {
   display: flex;
   justify-content: center;
-  background-color: blue;
+  background-color: #ffffff;
 }
 
 /* MAIN */
 main {
   display: flex;
   justify-content: center;
-  background-color: orange;
+  background-color: #2d6bdf5d;
   gap: 3rem;
 }
 

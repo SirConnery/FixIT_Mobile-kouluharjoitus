@@ -4,7 +4,7 @@ function cFaqCards() {
   faqCards.innerHTML = "";
 
   questions.forEach((question, index) => {
-    let card = document.createElement("div");
+    let card = document.createElement("article");
     card.classList.add("faq-card");
 
     let cardQuestionArea = document.createElement("div");

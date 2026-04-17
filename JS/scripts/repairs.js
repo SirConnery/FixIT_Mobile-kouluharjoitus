@@ -7,7 +7,7 @@ let prices = data.prices;
 
 function cResultCards() {
   repairTypes.forEach((repairType, i) => {
-    let card = document.createElement("div");
+    let card = document.createElement("article");
     card.classList.add("result-card");
 
     let cardHeadlineArea = document.createElement("div");

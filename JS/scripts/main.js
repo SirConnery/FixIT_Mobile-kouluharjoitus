@@ -116,8 +116,8 @@ function submitResults(event) {
 }
 
 function cFooter() {
-  const footerContentWrapper = document.createElement("div");
-  footerContentWrapper.classList.add("footerContentWrapper");
+  const footerContentWrapper = document.createElement("footer");
+  footerContentWrapper.classList.add("footer-content-wrapper");
 
   const footerText = document.createElement("p");
   footerText.classList.add("footer-text");

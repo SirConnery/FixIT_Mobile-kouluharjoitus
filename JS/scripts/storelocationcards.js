@@ -7,7 +7,7 @@ function cStoreLocationCards() {
 
   storeLocations.forEach((storeLocation, index) => {
     // Card container
-    let card = document.createElement("div");
+    let card = document.createElement("article");
     card.classList.add("store-location-card");
 
     // Text area

@@ -247,7 +247,58 @@ footer {
 }
 
 /* =============================
-   6. RESULT-CARD
+   6. HOUSE-AD-CARDS
+============================= */
+
+.house-ad-section {
+  margin: 0;
+}
+
+.house-ad-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.house-ad-card {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.house-ad-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.house-ad-header {
+  margin: 2rem;
+}
+
+.house-ad-title {
+  margin: 0;
+}
+
+.house-ad-description-area {
+  margin: 1rem;
+}
+
+.house-ad-description {
+  margin: 0;
+}
+
+.house-ad-img-container {
+  margin: 0;
+}
+
+.house-ad-img {
+  display: block;
+}
+
+/* =============================
+   7. RESULT-CARD
 ============================= */
 
 .result-cards {
@@ -320,7 +371,7 @@ footer {
 }
 
 /* =============================
-   7. FAQ-CARD
+   8. FAQ-CARD
 ============================= */
 
 .faq-cards {
@@ -371,7 +422,7 @@ footer {
 }
 
 /* =============================
-   8. CONTACT FORM
+   9. CONTACT FORM
 ============================= */
 
 .contact-form {
@@ -466,7 +517,7 @@ footer {
 }
 
 /* =============================
-   9. STORE LOCATION CARDS
+   10. STORE LOCATION CARDS
 ============================= */
 
 .store-location-cards-container {
@@ -511,7 +562,7 @@ footer {
 }
 
 /* =========================
-   10. IMAGES
+   11. IMAGES
 ========================= */
 
 figure {

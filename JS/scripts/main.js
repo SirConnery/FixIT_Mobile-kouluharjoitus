@@ -119,12 +119,35 @@ function cFooter() {
   const footerContentWrapper = document.createElement("footer");
   footerContentWrapper.classList.add("footer-content-wrapper");
 
-  const footerText = document.createElement("p");
-  footerText.classList.add("footer-text");
-  footerText.textContent =
+  const footerHeaderLinksContainer = document.createElement("div");
+  footerHeaderLinksContainer.classList.add("footer-header-links-container");
+
+  const footerEndingText = document.createElement("p");
+  footerEndingText.classList.add("footer-ending-text");
+
+  // Create links
+  const footerLinks = [
+    { name: "Home", url: "index.html" },
+    { name: "Repairs", url: "repairs.html" },
+    { name: "FAQ", url: "faq.html" },
+    { name: "Contact", url: "contact.html" },
+  ];
+
+  footerLinks.forEach((link) => {
+    const footerHeaderLink = document.createElement("a");
+    footerHeaderLink.classList.add("footer-header-link");
+    footerHeaderLink.textContent = link.name;
+    footerHeaderLink.href = link.url;
+
+    footerContentWrapper.append(footerHeaderLink);
+  });
+
+  //Ending text
+  footerEndingText.textContent =
     "© 2026 FixIT Mobile | Vantaa | Phone repairs, screen replacements, and troubleshooting. All rights reserved.";
 
-  footerContentWrapper.append(footerText);
+  //Append
+  footerContentWrapper.append(footerHeaderLinksContainer, footerEndingText);
   footer.append(footerContentWrapper);
 }
 

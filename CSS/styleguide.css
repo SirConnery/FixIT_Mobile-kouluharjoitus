@@ -193,8 +193,22 @@ footer {
   margin: 0;
 }
 
-.footer-text {
+.footer-header-links-container {
   margin: 0;
+}
+
+.footer-header-link {
+  margin: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-header-link:hover {
+  opacity: 0.8;
+}
+
+.footer-ending-text {
+  font-size: small;
 }
 
 /* =============================
@@ -303,7 +317,7 @@ footer {
 
 .result-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(2, minmax(30rem, 1fr));
   width: 100%;
   gap: 0.5rem;
   background: linear-gradient(
@@ -376,7 +390,7 @@ footer {
 
 .faq-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(3, minmax(30rem, 1fr));
   width: 100%;
   gap: 0.5rem;
 }
@@ -522,7 +536,7 @@ footer {
 
 .store-location-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(3, minmax(30rem, 1fr));
   width: 100%;
   gap: 2rem;
   background-color: grey;

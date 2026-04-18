@@ -95,9 +95,19 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin-right: 1.25rem;
   font-weight: bold;
+  position: relative;
+  border: 2px solid transparent;
+  padding: 0.4rem 0.6rem;
+  transition: all 0.5s;
 }
+
+nav a:hover {
+  border: 2px solid #A6A6A6;
+  box-shadow: 0 0 10px 5px #2d6bdf8c;
+  background-color: #2d6bdf8c;
+}
+
 
 /* HEADER */
 
@@ -210,22 +220,40 @@ footer {
   text-align: center;
 }
 
-.footer-content-wrapper {
-  margin: 0;
-}
-
-.footer-header-links-container {
-  margin: 0;
-}
-
 .footer-header-link {
+  position: relative;
   margin: 1rem;
   color: white;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.6rem;
 }
 
-.footer-header-link:hover {
-  opacity: 0.8;
+.footer-header-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.4s ease;
+  pointer-events: none;
+}
+
+.footer-header-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  transition: border-color 0.4s ease;
+  pointer-events: none;
+}
+
+.footer-header-link:hover::before,
+.footer-header-link:hover::after {
+  border-color: #A6A6A6;
 }
 
 .footer-ending-text {
@@ -277,11 +305,19 @@ footer {
   margin: 0.2rem;
 }
 
+
 .view-services-btn {
   background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
-  color: rgb(255, 255, 255);
+  color: #fff;
   padding: 0.75rem 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.view-services-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
 
 /* =============================
    6. HOUSE-AD-CARDS
@@ -451,6 +487,13 @@ footer {
 
 .faq-show-answer-btn {
   margin: 0;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.faq-show-answer-btn:hover {
+  transform: scale(1.07);
 }
 
 .faq-card-answer-area {

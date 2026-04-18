@@ -563,7 +563,7 @@ footer {
 .store-location-cards-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(30rem, 1fr));
-  width: 100vw;
+  width: 100%;
   gap: 2rem;
   background-color: grey;
   padding: 1rem;

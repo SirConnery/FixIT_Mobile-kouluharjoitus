@@ -77,30 +77,6 @@ p {
   height: 100%;
 }
 
-/* HERO */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  width: 100%;
-  height: 400px;
-}
-
-.hero-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* MAIN */
-main {
-  display: flex;
-  justify-content: center;
-  background-color: #2d6bdf5d;
-  gap: 3rem;
-}
-
 /* NAV */
 nav {
   display: flex;
@@ -119,7 +95,7 @@ nav a {
   font-weight: bold;
 }
 
-/* HEADER LOGO */
+/* HEADER */
 
 .header-logo-container {
   display: flex;
@@ -144,6 +120,31 @@ nav a {
   width: 25px;
   height: 25px;
   margin: 0.625rem;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 400px;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #2d6bdf5d;
+  gap: 3rem;
+  width: 100vw;
 }
 
 /* BUTTON */
@@ -234,6 +235,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  max-width: 100vw;
 }
 
 .brand-model-card-background-wrapper {
@@ -281,7 +283,7 @@ footer {
 ============================= */
 
 .house-ad-section {
-  margin: 0;
+  width: 100vw;
 }
 
 .house-ad-container {
@@ -415,6 +417,7 @@ footer {
   grid-template-columns: repeat(3, minmax(30rem, 1fr));
   width: 100%;
   gap: 0.5rem;
+  max-width: 100vw;
 }
 
 .faq-card {
@@ -471,6 +474,7 @@ footer {
 
   background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
   color: #fff;
+  max-width: 100vw;
 }
 
 /* Labels */
@@ -559,7 +563,7 @@ footer {
 .store-location-cards-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(30rem, 1fr));
-  width: 100%;
+  width: 100vw;
   gap: 2rem;
   background-color: grey;
   padding: 1rem;
@@ -609,4 +613,40 @@ figure {
 img {
   margin: 0;
   padding: 0;
+}
+
+/* =========================
+   12. CONFIGS FOR PHONES
+========================= */
+
+@media (max-width: 768px) {
+  nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-items: center;
+    gap: 0rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  nav a {
+    margin-right: 0rem;
+  }
+
+  .header-logo-container {
+    display: none;
+  }
+
+  .result-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .faq-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .store-location-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

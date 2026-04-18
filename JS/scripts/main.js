@@ -26,7 +26,9 @@ function createSelectionCard(container) {
   headline.classList.add("brand-model-card-headline");
   text.classList.add("brand-model-card-text");
   brandSelect.classList.add("brand-select");
+  brandSelect.id = "brand-select";
   modelSelect.classList.add("model-select");
+  modelSelect.id = "model-select";
   viewServicesBtn.classList.add("view-services-btn");
 
   headline.textContent = "Reliable Phone Repair";

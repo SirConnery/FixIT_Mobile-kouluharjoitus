@@ -71,7 +71,7 @@ p {
 .top-ad-container {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-ad 7s linear infinite;
+  animation: scroll-ad 15s linear infinite;
   height: 100%;
   cursor: pointer;
 }
@@ -625,6 +625,10 @@ img {
 ========================= */
 
 @media (max-width: 768px) {
+  .top-ad-container {
+    animation: scroll-ad 8s linear infinite;
+  }
+
   nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

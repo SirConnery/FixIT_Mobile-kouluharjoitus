@@ -129,10 +129,10 @@ function cFooter() {
 
   // Create links
   const footerLinks = [
-    { name: "Home", url: "index.html" },
-    { name: "Repairs", url: "repairs.html" },
-    { name: "FAQ", url: "faq.html" },
-    { name: "Contact", url: "contact.html" },
+    { name: "Home", url: "./index.html" },
+    { name: "Repairs", url: "./repairs.html" },
+    { name: "FAQ", url: "./faq.html" },
+    { name: "Contact", url: "./contact.html" },
   ];
 
   footerLinks.forEach((link) => {

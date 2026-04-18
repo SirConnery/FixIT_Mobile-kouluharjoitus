@@ -60,23 +60,35 @@ p {
   width: 100vw;
   overflow: hidden;
   background-color: white;
+  height: 25px;
 }
 
 .top-ad-container {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-ad 10s linear infinite;
+  animation: scroll-ad 7s linear infinite;
+  height: 100%;
+  cursor: pointer;
 }
 
 .img-top-ad {
   display: inline-block;
+  height: 100%;
 }
 
 /* HERO */
 .hero {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #ffffff;
+  width: 100%;
+  height: 400px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
 }
 
 /* MAIN */
@@ -218,6 +230,7 @@ footer {
 .brand-model-selection-card {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 .brand-model-card-background-wrapper {
@@ -304,11 +317,17 @@ footer {
 }
 
 .house-ad-img-container {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
 }
 
 .house-ad-img {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* =============================

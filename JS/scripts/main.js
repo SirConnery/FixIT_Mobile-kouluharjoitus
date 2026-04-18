@@ -144,7 +144,7 @@ function cFooter() {
 
   //Ending text
   footerEndingText.textContent =
-    "© 2026 FixIT Mobile | Vantaa | Phone repairs, screen replacements, and troubleshooting. All rights reserved.";
+    "© 2026 FixIT Mobile | Vantaa | Phone repairs, screen replacements, and troubleshooting. Ratatie 11, 01300 Vantaa (Tikkurila). Open Mon-Fri 10:00-18:00. All rights reserved.";
 
   //Append
   footerContentWrapper.append(footerHeaderLinksContainer, footerEndingText);

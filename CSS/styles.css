@@ -18,6 +18,10 @@
 
 /* INDEX PAGE */
 
+.index-site-main-content {
+  margin: 0;
+}
+
 .site-summary-card {
   display: flex;
   flex-direction: column;
@@ -30,6 +34,39 @@
   );
   border-radius: 10px;
   margin: 1rem;
+  width: 50%;
+}
+
+.site-summary-card-body {
+  display: flex;
+  gap: 5rem;
+}
+
+.site-summary-card-img-container {
+  width: 60%;
+  aspect-ratio: 16 / 9;
+  margin-left: auto;
+}
+
+.site-summary-card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-section-house-ad {
+  background-color: red;
+  width: 50%;
+}
+
+.main-section-house-ad-img-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-left: auto;
+}
+
+.main-section-house-ad-img {
+  width: 100%;
+  height: 100%;
 }
 
 /* REPAIRS PAGE */
@@ -52,5 +89,20 @@
   }
   100% {
     transform: translateX(100vw);
+  }
+}
+
+/* Phone configs */
+@media (max-width: 768px) {
+  .index-site-main-content {
+    flex-direction: column;
+  }
+
+  .site-summary-card {
+    width: 100%;
+  }
+
+  .main-section-house-ad {
+    width: 100%;
   }
 }

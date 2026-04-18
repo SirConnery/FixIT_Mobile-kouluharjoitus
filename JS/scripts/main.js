@@ -31,7 +31,7 @@ function createSelectionCard(container) {
   modelSelect.id = "model-select";
   viewServicesBtn.classList.add("view-services-btn");
 
-  headline.textContent = "Reliable Phone Repair";
+  headline.textContent = "View Our Services";
   text.textContent = "Select your phone";
   viewServicesBtn.textContent = "View Services";
 

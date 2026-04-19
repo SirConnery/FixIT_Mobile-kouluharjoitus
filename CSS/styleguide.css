@@ -81,6 +81,10 @@ p {
   height: 100%;
 }
 
+.top-ad:hover .top-ad-container {
+  animation-play-state: paused;
+}
+
 /* NAV */
 nav {
   display: flex;

@@ -43,14 +43,14 @@
 }
 
 .site-summary-card-img-container {
-  width: 60%;
-  aspect-ratio: 16 / 9;
+  width: 50%;
+  aspect-ratio: 4 / 3;
   margin-left: auto;
 }
 
 .site-summary-card-img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
 }
 
 .main-section-house-ad {

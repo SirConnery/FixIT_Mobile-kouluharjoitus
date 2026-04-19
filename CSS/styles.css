@@ -73,9 +73,78 @@
 
 /* REPAIRS PAGE */
 
-.repairs-page-howitworks-card {
+  /* SECTION */
+.how-it-works {
+  background: linear-gradient(
+    to bottom,
+    #c7dbff 0%,
+    #b6cffb 100%
+  );
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+  /* HEADINGS */
+.how-it-works-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works-subtitle {
+  max-width: 520px;
+  margin: 0 auto 3rem;
+  color: #333;
+}
+
+  /* CARDS */
+.how-it-works-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.how-it-works-card {
+  background: linear-gradient(
+    to bottom,
+    rgba(96, 125, 139, 0.95),
+    rgba(55, 71, 79, 0.95));
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.how-it-works-card:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+  /* STEP NUMBER */
+.step-number {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+  /* TEXT */
+.how-it-works-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.how-it-works-card p {
   margin: 0;
-  background-color: rgba(224, 134, 16, 0.877);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /* LOCATIONS PAGE */
@@ -107,4 +176,9 @@
   .main-section-house-ad {
     width: 100%;
   }
+
+  .how-it-works-cards {
+    grid-template-columns: 1fr;
+  }
+
 }

@@ -235,9 +235,11 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.4s ease;
+  border-top: 2px solid #A6A6A6;
+  border-bottom: 2px solid #A6A6A6;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s ease;
   pointer-events: none;
 }
 
@@ -245,10 +247,19 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-  transition: border-color 0.4s ease;
+  border-left: 2px solid #A6A6A6;
+  border-right: 2px solid #A6A6A6;
+  transform: scaleY(0);
+  transform-origin: center top;
+  transition: transform 0.4s ease;
   pointer-events: none;
+}
+
+.footer-header-link:hover::before {
+  transform: scaleX(1);
+}
+.footer-header-link:hover::after {
+  transform: scaleY(1);
 }
 
 .footer-header-link:hover::before,
@@ -594,6 +605,15 @@ footer {
 .contact-form button:hover {
   background-color: #dbe4ff;
 }
+
+.show-hide-form-btn {
+  transition: transform 0.2s ease;
+}
+
+.show-hide-form-btn:hover {
+  transform: scale(1.07);
+}
+
 
 /* Responsive */
 @media (max-width: 500px) {

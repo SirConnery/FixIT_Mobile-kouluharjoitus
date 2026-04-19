@@ -54,9 +54,10 @@
 }
 
 .main-section-house-ad {
-  background-color: red;
+  background-color: #2d6bdf8c;
   width: 50%;
   margin: 1rem;
+  border-radius: 10px;
 }
 
 .main-section-house-ad-img-container {

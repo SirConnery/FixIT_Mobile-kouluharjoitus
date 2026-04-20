@@ -21,26 +21,26 @@ const repairTypes = [
   {
     name: "Näytön korjaus",
     description: "Korjataan halkeillut tai toimimattomat näytöt",
-    img: "https://placehold.co/150x150",
+    img: "/Img/icons/screen_repair.webp",
   },
   {
     name: "Näytön vaihto",
     description: "Näytön täydellinen vaihto uuteen",
-    img: "https://placehold.co/150x150",
+    img: "/Img/icons/screen_change.webp",
   },
   {
     name: "Akun vaihto",
     description: "Vanhan tai viallisen akun nopea vaihto",
-    img: "https://placehold.co/150x150",
+    img: "/Img/icons/battery.webp",
   },
   {
     name: "Liitäntäkorjaukset",
     description: "Lataus- ja kuulokeliitäntöjen korjaus",
-    img: "https://placehold.co/150x150",
+    img: "/Img/icons/port_repairs.webp",
   },
   {
     name: "Kaiuttimen korjaus",
     description: "Äänenlaadun palautus tai rikkoutuneen kaiuttimen vaihto",
-    img: "https://placehold.co/150x150",
+    img: "/Img/icons/speaker_repair.webp",
   },
 ];

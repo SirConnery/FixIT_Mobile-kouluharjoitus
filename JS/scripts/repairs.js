@@ -40,7 +40,9 @@ function cResultCards() {
 
     let cardImg = document.createElement("img");
     cardImg.classList.add("result-card-img");
-    cardImg.src = "https://placehold.co/150x150";
+    cardImg.src = repairType.img;
+    cardImg.alt = repairType.name;
+
 
     cardHeadlineArea.append(cardHeadline, cardModelBrandNames, cardPrice);
     cardTextArea.append(cardText);

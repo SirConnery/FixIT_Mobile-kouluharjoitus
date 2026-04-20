@@ -16,17 +16,29 @@
   --font-body: Arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 /* =========================
     TYPOGRAPHY
 ========================= */
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: var(--font-body);
   color: var(--color-dark);
   background-color: white;
   line-height: 1.6;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -162,8 +174,10 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #2d6bdf5d;
-  gap: 3rem;
   width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* BUTTON */

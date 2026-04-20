@@ -31,9 +31,9 @@ function createSelectionCard(container) {
   modelSelect.id = "model-select";
   viewServicesBtn.classList.add("view-services-btn");
 
-  headline.textContent = "View Our Services";
-  text.textContent = "Select your phone";
-  viewServicesBtn.textContent = "View Services";
+  headline.textContent = "Näytä palvelumme";
+  text.textContent = "Valitse puhelimesi";
+  viewServicesBtn.textContent = "Näytä palvelut";
 
   textArea.append(headline, text);
   selectionControls.append(brandSelect, modelSelect, viewServicesBtn);
@@ -129,10 +129,10 @@ function cFooter() {
 
   // Create links
   const footerLinks = [
-    { name: "Home", url: "./index.html" },
-    { name: "Repairs", url: "./repairs.html" },
-    { name: "FAQ", url: "./faq.html" },
-    { name: "Contact", url: "./contact.html" },
+    { name: "Etusivu", url: "./index.html" },
+    { name: "Korjaukset", url: "./repairs.html" },
+    { name: "UKK", url: "./faq.html" },
+    { name: "Yhteystiedot", url: "./contact.html" },
   ];
 
   footerLinks.forEach((link) => {
@@ -146,7 +146,7 @@ function cFooter() {
 
   //Ending text
   footerEndingText.textContent =
-    "© 2026 FixIT Mobile | Vantaa | Phone repairs, screen replacements, and troubleshooting. Ratatie 11, 01300 Vantaa (Tikkurila). Open Mon-Fri 10:00-18:00. All rights reserved.";
+    "© 2026 FixIT Mobile | Vantaa | Puhelinkorjaukset, näytön vaihdot ja vianetsintä. Ratatie 11, 01300 Vantaa (Tikkurila). Avoinna ma-pe 10:00-18:00. Kaikki oikeudet pidätetään.";
 
   //Append
   footerContentWrapper.append(footerHeaderLinksContainer, footerEndingText);

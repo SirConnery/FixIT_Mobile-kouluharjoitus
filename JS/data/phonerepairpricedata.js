@@ -1,3 +1,4 @@
+
 const phoneRepairPriceData = {
   Apple: {
     "iPhone 12": [199, 249, 129, 99, 79],
@@ -18,28 +19,28 @@ const phoneRepairPriceData = {
 
 const repairTypes = [
   {
-    name: "Screen Repair",
-    description: "Repair cracked or malfunctioning screens",
+    name: "Näytön korjaus",
+    description: "Korjataan halkeillut tai toimimattomat näytöt",
     img: "https://placehold.co/150x150",
   },
   {
-    name: "Screen Change",
-    description: "Replace the screen completely with a new one",
+    name: "Näytön vaihto",
+    description: "Näytön täydellinen vaihto uuteen",
     img: "https://placehold.co/150x150",
   },
   {
-    name: "Battery Change",
-    description: "Swap out old or faulty batteries quickly",
+    name: "Akun vaihto",
+    description: "Vanhan tai viallisen akun nopea vaihto",
     img: "https://placehold.co/150x150",
   },
   {
-    name: "Port Repairs",
-    description: "Fix charging or headphone ports",
+    name: "Liitäntäkorjaukset",
+    description: "Lataus- ja kuulokeliitäntöjen korjaus",
     img: "https://placehold.co/150x150",
   },
   {
-    name: "Speaker Repair",
-    description: "Restore audio quality or replace broken speakers",
+    name: "Kaiuttimen korjaus",
+    description: "Äänenlaadun palautus tai rikkoutuneen kaiuttimen vaihto",
     img: "https://placehold.co/150x150",
   },
 ];

@@ -19,7 +19,7 @@ function cFaqCards() {
 
     let showAnswerBtn = document.createElement("button");
     showAnswerBtn.classList.add("faq-show-answer-btn");
-    showAnswerBtn.textContent = "Show answer";
+    showAnswerBtn.textContent = "Näytä vastaus";
 
     let cardAnswerArea = document.createElement("div");
     cardAnswerArea.classList.add("faq-card-answer-area");
@@ -48,11 +48,11 @@ function showHideanswer(event) {
   const card = btn.closest(".faq-card");
   const answerArea = card.querySelector(".faq-card-answer-area");
 
-  if (btn.textContent === "Show answer") {
-    btn.textContent = "Hide answer";
+  if (btn.textContent === "Näytä vastaus") {
+    btn.textContent = "Piilota vastaus";
     answerArea.classList.remove("hidden");
-  } else if (btn.textContent === "Hide answer") {
-    btn.textContent = "Show answer";
+  } else if (btn.textContent === "Piilota vastaus") {
+    btn.textContent = "Näytä vastaus";
     answerArea.classList.add("hidden");
   }
 }

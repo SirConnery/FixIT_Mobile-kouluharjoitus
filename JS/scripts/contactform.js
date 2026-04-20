@@ -3,7 +3,7 @@ const showHideBtn = document.getElementById("show-hide-form-btn");
 
 function cFormToggle() {
   showHideBtn.classList.add("form-toggle-btn");
-  showHideBtn.textContent = "Show form";
+  showHideBtn.textContent = "Näytä lomake";
 
   container.classList.add("hidden");
 
@@ -12,9 +12,9 @@ function cFormToggle() {
     container.classList.toggle("hidden");
 
     if (container.classList.contains("hidden")) {
-      showHideBtn.textContent = "Show form";
+      showHideBtn.textContent = "Näytä lomake";
     } else {
-      showHideBtn.textContent = "Hide form";
+      showHideBtn.textContent = "Piilota lomake";
     }
   });
 }

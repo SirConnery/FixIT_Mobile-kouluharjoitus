@@ -1,37 +1,37 @@
 const questions = [
   {
-    question: "How long does a typical phone repair take?",
+    question: "Kuinka kauan tyypillinen puhelinkorjaus kestää?",
     answer:
-      "Most repairs are completed within 1-2 hours, depending on the issue.",
+      "Useimmat korjaukset valmistuvat 1-2 tunnissa vian laadusta riippuen.",
   },
   {
-    question: "Do you use original or third-party parts?",
+    question: "Käytättekö alkuperäisiä vai kolmannen osapuolen osia?",
     answer:
-      "We use high-quality OEM or original parts depending on availability and customer preference.",
+      "Käytämme korkealaatuisia OEM- tai alkuperäisosia saatavuuden ja asiakkaan toiveiden mukaan.",
   },
   {
-    question: "Is there a warranty on repairs?",
+    question: "Sisältyykö korjauksiin takuu?",
     answer:
-      "Yes, all repairs come with a 90-day warranty covering parts and labor.",
+      "Kyllä. Kaikilla korjauksilla on 90 päivän takuu, joka kattaa osat ja työn.",
   },
   {
-    question: "Do I need to book an appointment for a repair?",
+    question: "Pitääkö korjausta varten varata aika etukäteen?",
     answer:
-      "Walk-ins are welcome, but booking an appointment helps reduce waiting time.",
+      "Ilman ajanvarausta voi tulla suoraan liikkeeseen, mutta ajanvaraus voi lyhentää odotusaikaa.",
   },
   {
-    question: "Can you fix water-damaged phones?",
+    question: "Korjaatteko kastuneita puhelimia?",
     answer:
-      "Yes, we offer diagnostics and repair services for water-damaged devices, though success depends on severity.",
+      "Kyllä. Tarjoamme diagnostiikka- ja korjauspalveluja kastuneille laitteille, mutta onnistuminen riippuu vaurion vakavuudesta.",
   },
   {
-    question: "How much does a typical screen replacement cost?",
+    question: "Mitä näytön vaihto yleensä maksaa?",
     answer:
-      "Prices vary by model, but most screen replacements range between affordable standard rates depending on the device.",
+      "Hinta vaihtelee mallin mukaan, mutta useimmat näytönvaihdot ovat kohtuuhintaisia laitteen tyypistä riippuen.",
   },
   {
-    question: "Do you offer data recovery services?",
+    question: "Tarjoatteko tietojen palautuspalveluja?",
     answer:
-      "Yes, we provide data recovery for phones with software or hardware issues when possible.",
+      "Kyllä. Pyrimme palauttamaan tietoja ohjelmisto- tai laitteistovioista kärsivistä puhelimista aina kun se on mahdollista.",
   },
 ];

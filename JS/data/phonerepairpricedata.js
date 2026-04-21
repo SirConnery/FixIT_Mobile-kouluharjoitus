@@ -1,4 +1,3 @@
-
 const phoneRepairPriceData = {
   Apple: {
     "iPhone 12": [199, 249, 129, 99, 79],
@@ -21,26 +20,26 @@ const repairTypes = [
   {
     name: "Näytön korjaus",
     description: "Korjataan halkeillut tai toimimattomat näytöt",
-    img: "/Img/icons/screen_repair.webp",
+    img: "./Img/icons/screen_repair.webp",
   },
   {
     name: "Näytön vaihto",
     description: "Näytön täydellinen vaihto uuteen",
-    img: "/Img/icons/screen_change.webp",
+    img: "./Img/icons/screen_change.webp",
   },
   {
     name: "Akun vaihto",
     description: "Vanhan tai viallisen akun nopea vaihto",
-    img: "/Img/icons/battery.webp",
+    img: "./Img/icons/battery.webp",
   },
   {
     name: "Liitäntäkorjaukset",
     description: "Lataus- ja kuulokeliitäntöjen korjaus",
-    img: "/Img/icons/port_repairs.webp",
+    img: "./Img/icons/port_repairs.webp",
   },
   {
     name: "Kaiuttimen korjaus",
     description: "Äänenlaadun palautus tai rikkoutuneen kaiuttimen vaihto",
-    img: "/Img/icons/speaker_repair.webp",
+    img: "./Img/icons/speaker_repair.webp",
   },
 ];

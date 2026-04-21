@@ -84,7 +84,7 @@ p {
 .top-ad-container {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-ad 15s linear infinite;
+  animation: scroll-ad 30s linear infinite;
   height: 100%;
   cursor: pointer;
 }

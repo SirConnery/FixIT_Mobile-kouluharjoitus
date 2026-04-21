@@ -427,7 +427,7 @@ footer {
 
 .result-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(30rem, 1fr));
+  grid-template-columns: repeat(3, minmax(30rem, 1fr));
   width: 100%;
   gap: 0.5rem;
   background: linear-gradient(

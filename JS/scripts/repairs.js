@@ -19,7 +19,7 @@ function cResultCards() {
 
     let cardModelBrandNames = document.createElement("h4");
     cardModelBrandNames.classList.add("result-card-model-brand-names");
-    cardModelBrandNames = brand + " " + model;
+    cardModelBrandNames.textContent = brand + " " + model;
 
     let cardPrice = document.createElement("h4");
     cardPrice.classList.add("result-card-price");
@@ -42,7 +42,6 @@ function cResultCards() {
     cardImg.classList.add("result-card-img");
     cardImg.src = repairType.img;
     cardImg.alt = repairType.name;
-
 
     cardHeadlineArea.append(cardHeadline, cardModelBrandNames, cardPrice);
     cardTextArea.append(cardText);

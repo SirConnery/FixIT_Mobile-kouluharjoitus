@@ -21,6 +21,48 @@
   max-width: 100%;
 }
 
+
+/* =========================
+   COLOR SWATCHES (STYLEGUIDE)
+========================= */
+
+.color-swatch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.color-swatch {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.color-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+/* Individual colors */
+.color-primary {
+  background-color: var(--color-primary);
+}
+
+.color-accent {
+  background-color: var(--color-accent);
+}
+
+.color-light {
+  background-color: var(--color-light);
+}
+
+.color-dark {
+  background-color: var(--color-dark);
+}
+
+
 /* =========================
     TYPOGRAPHY
 ========================= */
@@ -345,6 +387,7 @@ footer {
   margin: 0.2rem;
 }
 
+.button.button-primary,
 .view-services-btn {
   background: linear-gradient(to bottom, #2d6bdf8c 80%, #1f2a44 100%);
   color: #fff;
@@ -354,6 +397,7 @@ footer {
     box-shadow 0.3s ease;
 }
 
+.button.button-primary:hover,
 .view-services-btn:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);

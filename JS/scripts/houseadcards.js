@@ -33,6 +33,7 @@ function cHouseAdCards() {
     houseAdTitle.textContent = adData.headerText;
     houseAdDescription.textContent = adData.text;
     houseAdImg.src = adData.imgSource;
+    houseAdImg.alt = adData.headerText;
 
     // Styles
     houseAdContainer.style.backgroundColor = adData.containerColor;
